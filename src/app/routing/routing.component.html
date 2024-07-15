@@ -1,0 +1,15 @@
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <h2 class="m-3 p-2 border text-center">Routing Concept</h2>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-md-3">
+        <!-- <a [routerLink]="['/home', 123]" [queryParams]="{ name: 'dharani' }" class="btn btn-primary m-3 fw-bold">Home</a> -->
+
+        <a [routerLink]="['home',18]" [queryParams]="{name:'dharani'}" class="btn btn-primary fw-bold"> Home </a>
+        <button type="submit" class="btn btn-primary m-3 fw-bold" (click)="onNavigateDashboard()">Dashboard</button>
+        <button type="submit" class="btn btn-primary m-3 fw-bold" (click)="onNavigateService()">Service</button>
+
+    </div>
+</div>
