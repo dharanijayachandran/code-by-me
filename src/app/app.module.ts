@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HighlightDirective } from './highlight.directive';
@@ -12,6 +11,7 @@ import { RoutingComponent } from './routing/routing.component';
 import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ServiceComponent } from './service/service.component';
+import { FormatPipe } from './format.pipe';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,8 @@ import { ServiceComponent } from './service/service.component';
     RoutingComponent,
     HomeComponent,
     DashboardComponent,
-    ServiceComponent
+    ServiceComponent,
+    FormatPipe
   ],
   imports: [
     BrowserModule,

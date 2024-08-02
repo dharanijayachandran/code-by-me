@@ -7,7 +7,9 @@ import { ServiceComponent } from './service/service.component';
 const routes: Routes = [
   {path:'home/:id', component:HomeComponent},
   {path:'dashboard', component:DashboardComponent},
-  {path:'service', component:ServiceComponent}
+  {path:'service', component:ServiceComponent},
+  {path:'lazy', loadChildren: ()=> import('./lazy/lazy.module').then(m=>m.LazyModule) }
+
 
 ];
 

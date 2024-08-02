@@ -8,6 +8,12 @@ import { NgForm } from '@angular/forms';
 })
 export class AppComponent {
   title = 'code_by_me';
-  // @HostListener('mouseenter') 
-  
+  searchTerm: string = '';
+  items: Array<{ name: string }> = [
+    { name: 'Apple' },
+    { name: 'Banana' },
+    { name: 'Cherry' },
+    { name: 'Date' },
+    { name: 'Elderberry' }
+  ];
 }

@@ -14,3 +14,9 @@
 
 
 <router-outlet></router-outlet>
+
+
+<input type="text" [(ngModel)]="searchTerm" placeholder="Search">
+<ul>
+  <li *ngFor="let item of items | format:searchTerm">{{ item.name }}</li>
+</ul>
